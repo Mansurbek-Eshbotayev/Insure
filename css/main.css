@@ -329,7 +329,9 @@ padding: 65px 0;
 background-image: url(../img/bk3.png);
 background-repeat: no-repeat;
 background-position: center;
+background-size: cover;
 }
+
 
 .top__inner{
   display: flex;

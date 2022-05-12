@@ -350,7 +350,10 @@ background-position: center;
 
 .bottom__menu{
   display: flex;
-  justify-content: space-evenly;
+}
+
+.bottom__item{
+  margin-right: 170px;
 }
 
 .bottom__decle{

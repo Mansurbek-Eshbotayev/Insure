@@ -1,0 +1,389 @@
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../font/karla-v22-latin-regular.woff2') format('woff2'),
+       url('../font/karla-v22-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/karla-v22-latin-700.woff2') format('woff2'), 
+       url('../fonts/karla-v22-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'),
+       url('../fonts/dm-serif-display-v10-latin-regular.woff') format('woff'); 
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", "DM Serif Display", "Arial", "sans-serif";
+}
+
+.container{
+  width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+img{
+  vertical-align: middle;
+}
+
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* header */
+
+.header{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav{
+  display: flex;
+}
+
+.nav__link{
+  margin-right: 25px;
+  
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+color: #837D88;
+}
+
+.link{
+  margin-right: 0;
+  padding: 12px 28px;
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+color: #2C2830;
+border: 1.5px solid #2C2830;
+}
+
+
+/* Hero */
+
+
+.hero{
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.hero__inner{
+  display: flex;
+}
+
+.hero__left{
+  width: 540px;
+  padding-top: 105px;
+}
+
+.hero__span{
+  display: block;
+  width: 150px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.hero__title{
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 64px;
+color: #FFFFFF;
+margin-top: 63px;
+margin-bottom: 16px;
+}
+
+.hero__text{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+margin-bottom: 37px;
+}
+
+.hero__link{
+  padding: 12px 28px;
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+text-align: center;
+color: #FFFFFF;
+border: 1.5px solid #FFFFFF;
+}
+
+.hero__right{
+  position: relative;
+  z-index: 1;
+}
+
+.hero__img{
+  margin-top: 85px;
+  margin-left: 20px;
+} 
+
+.hero__one{
+  position: absolute;
+  z-index: 2;
+}
+
+/* Diffr */
+
+.differ{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.differ__span{
+  width: 150px;
+  height: 1px;
+  background-color: #C396C6;
+  display: block;
+  margin-bottom: 63px;
+}
+
+.differ__title{
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400px;
+font-size: 72px;
+line-height: 64px;
+color: #2C2830;
+margin: 0;
+}
+
+.differ__menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item{
+  width: 350px;
+  padding-top: 210px;
+  position: relative;
+}
+
+.menu__item::before{
+  content: "";
+  width: 85px;
+  height: 85px;
+  background-image: url(../img/Group1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+}
+
+.menu__item:nth-child(2)::before{
+  content: "";
+  width: 85px;
+  height: 85px;
+  background-image: url(../img/Group2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+}
+
+.menu__item:nth-child(3)::before{
+  content: "";
+  width: 85px;
+  height: 85px;
+  background-image: url(../img/Group3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+}
+
+.menu__title{
+  margin: 0;
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400px;
+font-size: 28px;
+line-height: 38px;
+letter-spacing: -0.388889px;
+color: #2C2830;
+margin-bottom: 15px;
+}
+
+.menu__text{
+  font-family: 'Karla';
+font-style: normal;
+font-weight: 400px;
+font-size: 16px;
+line-height: 26px;
+color: #837D88;
+}
+
+/* FInd */
+
+.find{
+  height: 250px;
+  background-image: url(../img/bk2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 150px;
+}
+
+.find__inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.find__title{
+  width: 475px;
+  font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400px;
+font-size: 56px;
+line-height: 56px;
+letter-spacing: -0.777778px;
+color: #FFFFFF;
+margin: 0;
+margin-top: 70px;
+vertical-align: middle;
+}
+
+.find__link{
+  font-family: 'Karla';
+font-style: normal;
+font-weight: 700px;
+font-size: 13px;
+line-height: 15px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 65px;
+}
+
+/* Footer */
+
+.footer{
+padding: 65px 0;
+background-image: url(../img/bk3.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.top__inner{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 36px;
+}
+
+.top__menu{
+  display: flex;
+}
+
+.top__item{
+  margin-right: 16px;
+}
+
+.top__item:nth-child(4){
+  margin-right: 0;
+}
+
+.top__span{
+  width: 1110px;
+  height: 1px;
+  display: block;
+  background-color: #DADADA;
+  margin-bottom: 48px;
+}
+
+.bottom__menu{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom__decle{
+  display: inline-block;
+  font-family: 'Karla';
+font-style: normal;
+font-weight: 700px;
+font-size: 13px;
+line-height: 15px;
+color: #837D88;
+margin-bottom: 36px;
+}
+
+.bar__item{
+  font-family: 'Karla';
+font-style: normal;
+font-weight: 700px;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 1.5px;
+color: #2D2641;
+}
+
+.bar__item{
+  margin-bottom: 16px;
+}
+
+.bar__link{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #2D2641;
+}

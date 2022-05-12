@@ -177,6 +177,13 @@ border: 1.5px solid #FFFFFF;
 .hero__one{
   position: absolute;
   z-index: 2;
+  right: -575px;
+}
+
+.hero__two{
+  position: absolute;
+  z-index: 2;
+  left: -495px;
 }
 
 /* Diffr */
